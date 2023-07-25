@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script>
+        function subtract() {
+            let result = Number(output.innerText) - 1;
+            output.innerText = result;
+        }
+        function add() {
+            let result = Number(output.innerText) + 1;
+            output.innerText = result;
+        }
+    </script>
+
+    <div class="counter_container">
+        <button id="subtract" onClick="subtract()">-</button>
+        <span id="output">0</span>
+        <button id="add" onClick="add()">+</button>
+    </div>
+</body>
+</html>
